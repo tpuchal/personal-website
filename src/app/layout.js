@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       >
         <>
         <Header></Header>
-        <main className="flex-grow">
+        <main className="flex-grow px-8 flex-col">
           {children}
         </main>
         
