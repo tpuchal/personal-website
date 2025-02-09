@@ -1,6 +1,7 @@
 import FlippingCard from "@/components/FlippingCard";
 import HeaderCard from "@/components/HeaderCard";
 import ParagraphCard from "@/components/ParagraphCard";
+import WeatherComponent from "@/components/WeatherComponent";
 
 export default function Home() {
   return (

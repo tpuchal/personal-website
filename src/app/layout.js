@@ -1,14 +1,6 @@
-import { Space_Mono} from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
-
-const spaceMono = Space_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  weight: ['400', '700']
-});
 
 export const metadata = {
   title: "Create Next App",
