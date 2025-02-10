@@ -10,7 +10,7 @@ const WeatherComponent = () => {
         const fetchWeather = async () => {
           try {
             const response = await fetch(
-              "https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current_weather=true"
+              "https://api.open-meteo.com/v1/forecast?latitude=52.2298&longitude=21.0118&current_weather=true"
             );
             if (!response.ok) {
                 throw new Error("HTTP error! Status: ${response.status}");

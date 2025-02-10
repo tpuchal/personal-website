@@ -1,4 +1,5 @@
 'use client'
+import ThemeToggle from './ThemeToggle'
 import WeatherComponent from './WeatherComponent'
 
 
@@ -9,9 +10,10 @@ const Header = () => {
             <WeatherComponent/>
         </div>
         <div className='w-[50%] flex justify-end px-4'>
-            <a href='#' className='mx-2 px-4 bg-black border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>Home</a>
-            <a href='#' className='mx-2 px-4 bg-black border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>About me</a>
-            <a href='#' className='mx-2 px-4 bg-black border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>My Experience</a>
+            <a href='#' className='mx-2 px-4 flex items-center bg-background border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>Home</a>
+            <a href='#' className='mx-2 px-4 flex items-center bg-background border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>About me</a>
+            <a href='#' className='mx-2 px-4 flex items-center bg-background border border-green-500 transition-all duration-150 hover:bg-green-500 hover:text-black hover:border-green-300 hover:animate-pulse focus:outline-none focus:ring-1 focus:ring-green-400'>My Experience</a>
+            <ThemeToggle/>
         </div>
         </header>
   )

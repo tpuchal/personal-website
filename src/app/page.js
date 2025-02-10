@@ -7,9 +7,8 @@ export default function Home() {
   return (
     <div>
       <HeaderCard>
-        <span className="text-white text-6xl transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> Hi! --welcome
+        <span className="text-fontcolor text-6xl transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> Hi! --welcome
       </HeaderCard>
-      <FlippingCard/>
       <ParagraphCard>
         <div className="my-2 px-6">Welcome to my personal website!</div>
         <div className="my-2 px-6">Hope you will have a good time here and will know me better after this short journey!</div>
@@ -21,6 +20,7 @@ export default function Home() {
         When I’m not coding, you can find me exploring emerging technologies, participating in industry events, or training in the gym.
         </div>
         <HeaderCard>What can I do?</HeaderCard>
+        <FlippingCard/>
         <div className="my-2 px-6">
           I specialize in Java and C. I can do frontend too! I had some little experience in Angular, however I prefer creating websites in NextJS (like this one!)
         </div>

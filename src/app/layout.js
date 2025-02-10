@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/ThemeContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,16 +12,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`font-mono antialiased flex-col min-h-screen text-green-400` }
+        className={`font-mono antialiased flex-col min-h-screen]` }
       >
-        <>
-        <Header></Header>
-        <main className="flex-grow px-8 flex-col">
-          {children}
-        </main>
-        
-        <Footer></Footer>
-        </>
+        <ThemeProvider>
+          <Header></Header>
+          <main className="flex-grow px-8 flex-col">
+            {children}
+          </main>
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );
