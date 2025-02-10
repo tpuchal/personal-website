@@ -52,12 +52,13 @@ const FlippingCard = () => {
             <div className="relative w-[50%] h-60">
                 <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 top-0 left-0">
                     {frontLogos.map((src, index) => (
-                        <div key={index} className={`flex items-center justify-center h-[100%] relative transition-opacity duration-1000 px-2 py-2 bg-gray-800 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
+                        <div key={index} className={`flex items-center justify-center h-[100%] relative transition-opacity duration-1000 px-2 py-2 bg-gray-500 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
                             <Image
                                 src={"/" + src}
                                 alt={`Logo ${index + 1}`}
-                                width={40}
-                                height={40}
+                                width={0}
+                                height={0}
+                                style={{width: 'auto', height: '50px'}}
                                 ></Image>
                         </div>
                     ))}
@@ -69,8 +70,9 @@ const FlippingCard = () => {
                         <Image
                             src={"/" + src}
                             alt={`Logo ${index + 1}`}
-                            width={40}
+                            width={0}
                             height={40}
+                            style={{width: 'auto', height: '50px'}}
                             ></Image>
                     </div>
                     ))}
@@ -78,7 +80,7 @@ const FlippingCard = () => {
             </div>
         </div>
         <button onClick={handleFlip} className="flipButton">
-                {isFlipped ? 'Click to see whats behind the mirror' : 'Come back to frontend technologies'}
+                {isFlipped ? 'Come back to frontend technologies' : 'Click to see whats behind the mirror'}
         </button>
     </div>
   )

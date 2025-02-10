@@ -1,3 +1,4 @@
+import BackToTopButton from "@/components/BackToTopButton";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         className={`font-mono antialiased flex-col min-h-screen]` }
       >
         <ThemeProvider>
+          <BackToTopButton/>
           <Header></Header>
           <main className="flex-grow px-8 flex-col">
             {children}

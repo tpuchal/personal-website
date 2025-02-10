@@ -11,7 +11,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg transition-colors bg-background text-fontcolor border"
+      className="p-2 ml-2 transition-colors bg-background text-fontcolor border border-green-500"
     >
       {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
     </button>

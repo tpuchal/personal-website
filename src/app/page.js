@@ -5,14 +5,15 @@ import ParagraphCard from "@/components/ParagraphCard";
 export default function Home() {
   return (
     <div>
-      <HeaderCard className={'my-20'}>
+      <HeaderCard className={'my-20'} id={'home'}>
         <span className="text-fontcolor text-6xl transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> Hi! --welcome
       </HeaderCard>
       <ParagraphCard>
         <div className="my-2 px-6 font-bold">Welcome to my personal website!</div>
         <div className="my-2 px-6">Hope you will have a good time here and will know me better after this short journey!</div>
         <div className="my-2 px-6 font-bold">Important note!!!! <br></br> This website currently is not optimized for mobile devices. Please check it out on PC</div>
-        <div className="my-12">
+        
+        <div id="about-me" className="my-12">
           <HeaderCard>Who am i?</HeaderCard>
           <div className="my-2 px-6">
             I’m a results-driven software developer with a passion for engineering, cybersecurity, and business innovation. With hands-on experience in system integration, cloud computing, algorithm creation. I specialize in building scalable, high-performance applications. Over the years, I’ve worked with global financial institutions, tech startups, and industrial firms, delivering impactful solutions that merge technology with strategic business insights.
@@ -44,18 +45,18 @@ export default function Home() {
           <div className="my-2 px-6">
             If you are looking for a proactive, creative and engaged developer who creates, clean, efficient and safe solutions then you are in the right place!. Give me a call and I can tell you more about myself.
           </div>
-          <div className="my-2 px-6">
-            If you found my skills interesting then feel free to contact me, via email or Linkedin. You can get all the information below. Hope you enjoyed your stay! See you around!
-          </div>
         </div>
-        <div className="my-12">
+        <div id="my-experience" className="my-12">
           <HeaderCard>What can I do?</HeaderCard>
           <FlippingCard/>
           <div className="my-2 px-6">
             I have a great ammount of experience working for both small and large entities. In my line of work I utilized Spring framework extensively. I am also quite comfortable with relational and non-relational databases, Docker, Kafka and RabbitMQ. My other favourite language is C. I find it simple, elegant and undefeated when it comes to writing something that needs to execute fast.
           </div>
           <div className="my-2 px-6">
-            For the frontend side of things I have started with AngularJS (does this even exist right now?) but quickly learned React and have started working with it. After NextJS became a thing I suddenly fell in love with it, especially because of the appRouter and native SSR. Pretty cool stuff if you ask me!
+            For the frontend side of things I have started with AngularJS (does this even exist right now?) but quickly learned React and have started working with it. After NextJS became a thing I suddenly fell in love with it, especially because of the appRouter and native SSR. Pretty cool stuff if you ask me! This site has been created with NextJS, the source code is on my github. I included the most popular React concepts into it. Check it out!
+          </div>
+          <div className="my-2 px-6">
+            If you found my skills interesting then feel free to contact me, via email or Linkedin. You can get all the information below. Hope you enjoyed your stay! See you around!
           </div>
         </div>
       </ParagraphCard>
