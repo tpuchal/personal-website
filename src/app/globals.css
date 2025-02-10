@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+[data-theme="light"] {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #4ade80;
   --fontcolor:  #0a0a0a;
 }
 

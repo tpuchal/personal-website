@@ -10,7 +10,7 @@
 
 .flippingCard {
     width: 50%;
-    height: 10rem;
+    height: 15rem;
     position: relative;
     transform-style: preserve-3d;
     transition: 800ms;
@@ -19,8 +19,20 @@
     border-color: #4ade80;
 }
 
+.fadingLogos {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem 5rem;
+    grid-template-rows: auto;
+    place-items: start;
+}
+
 .cardFlipped {
     transform: rotateY(180deg);
+}
+
+.logosFaded {
+    opacity: 1;
 }
 
 .front,
@@ -67,4 +79,13 @@
 .flipButton:hover {
     background-color: white;
     color: black;
+}
+
+.frontLogos,
+.backLogos {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem 5rem;
+    grid-template-rows: auto;
+    place-items: start;
 }

@@ -1,8 +1,8 @@
 
 
-const HeaderCard = ({children}) => {
+const HeaderCard = ({children, className}) => {
   return (
-    <h1 className="py-4 px-4 flex align-middle justify-start text-6xl ">
+    <h1 className={`py-4 px-4 flex align-middle justify-start text-6xl ${className}`}>
         {children}
     </h1>
   )
