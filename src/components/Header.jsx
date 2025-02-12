@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className='flex min-w-full justify-between items-center py-6 px-4'>
+    <header className='flex min-w-full justify-between items-start py-6 px-4'>
       <div className='flex justify-start px-4 w-2/5'>
         <WeatherComponent />
       </div>

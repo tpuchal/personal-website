@@ -52,14 +52,13 @@ export default function Home() {
             I have a great ammount of experience working for both small and large entities. In my line of work I utilized Spring framework extensively. I am also quite comfortable with relational and non-relational databases, Docker, Kafka and RabbitMQ. My other favourite language is C. I find it simple, elegant and undefeated when it comes to writing something that needs to execute fast.
           </div>
           <div className="my-2 px-6">
-            For the frontend side of things I have started with AngularJS (does this even exist right now?) but quickly learned React and have started working with it. After NextJS became a thing I suddenly fell in love with it, especially because of the appRouter and native SSR. Pretty cool stuff if you ask me! This site has been created with NextJS, the source code is on my github. I included the most popular React concepts into it. Check it out!
+            For the frontend side of things I have started with AngularJS (does this even exist right now?) but quickly learned React and have started working with it. After NextJS became a thing I suddenly fell in love with it, especially because of the appRouter and native SSR. Pretty cool stuff if you ask me! This site has been created with NextJS, the source code is on my github. I included the most popular React concepts into it, used both regular CSS and Tailwind. Check it out!
           </div>
           <div className="my-2 px-6">
             If you found my skills interesting then feel free to contact me, via email or Linkedin. You can get all the information below. Hope you enjoyed your stay! See you around!
           </div>
         </div>
       </ParagraphCard>
-
     </>
   );
 }

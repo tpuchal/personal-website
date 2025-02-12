@@ -44,10 +44,9 @@ const WeatherComponent = () => {
     if (error) return <p className="text-red-500">Error: {error}</p>;
 
   return (
-    <div className="">
-        <span>Warsaw, Poland, {formatTime(weather.current_weather.time)}: </span>
-        <span>{weather.current_weather.temperature}°C</span>
-    </div>
+    <>
+        <span>Warsaw, Poland: {formatTime(weather.current_weather.time)} {weather.current_weather.temperature}°C</span>
+    </>
   )
 }
 
