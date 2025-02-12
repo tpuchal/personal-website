@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <BackToTopButton/>
-          <Header></Header>
+          <Header/>
           <main className="flex-grow md:px-8 px-2 flex-col">
             {children}
           </main>

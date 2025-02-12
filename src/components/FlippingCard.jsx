@@ -28,7 +28,7 @@ const FlippingCard = () => {
     ];
 
   return (
-    <div className="flex-col justify-center mt-6">
+    <div className="flex-col justify-center items-center mt-6">
         <div className='flippingCardContainer'>
             <div className={`flippingCard ${isFlipped ? 'cardFlipped' : ''}`}>
                 <div className='front'>
@@ -79,9 +79,11 @@ const FlippingCard = () => {
                 </div>
             </div>
         </div>
-        <button onClick={handleFlip} className="flipButton">
-                {isFlipped ? 'Come back to frontend technologies' : 'Click to see whats behind the mirror'}
-        </button>
+        <div className="flipButtonContainer">
+            <button onClick={handleFlip} className={`flipButton ${isFlipped ? 'flipButtonFront' : 'flipButtonBack'}`}>
+                    {isFlipped ? 'Come back to frontend technologies' : 'Click to see whats behind the mirror'}
+            </button>
+        </div>
     </div>
   )
 }

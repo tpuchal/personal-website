@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <>
       <HeaderCard className={'lg:my-20 my-5 w-full p-1'} id={'home'}>
-        <span className="text-fontcolor lg:text-6xl md:text-4xl text-lg transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> <span className="lg:text-6xl md:text-4xl text-lg">Hi! --welcome</span>
+        <span className="text-fontcolor lg:text-[3rem] md:text-4xl text-lg transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> <span className="lg:text-[3rem] md:text-4xl text-lg">Hi! --welcome</span>
       </HeaderCard>
       <ParagraphCard>
         <div className="my-2 px-6 font-bold text-base">Welcome to my personal website!</div>
         <div className="my-2 px-6">Hope you will have a good time here and will know me better after this short journey!</div>
-        
+
         <div id="about-me" className="my-12">
           <HeaderCard>Who am i?</HeaderCard>
           <div className="my-2 px-6">
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
         <div className="my-12">
-        <HeaderCard>My journey</HeaderCard>
+          <HeaderCard>My journey</HeaderCard>
           <div className="my-2 px-6">
             I always liked to figure out how things work. From disassembling old phones, reading about every topic (social or technical), to looking in all the places I should not have, my curiosity has driven me forward.
           </div>
@@ -47,8 +47,8 @@ export default function Home() {
         </div>
         <div id="my-experience" className="mt-12">
           <HeaderCard>What can I do?</HeaderCard>
-          <FlippingCard/>
-          <div className="my-2 px-6">
+          <FlippingCard />
+          <div className="mt-6 mb-2 px-6">
             I have a great ammount of experience working for both small and large entities. In my line of work I utilized Spring framework extensively. I am also quite comfortable with relational and non-relational databases, Docker, Kafka and RabbitMQ. My other favourite language is C. I find it simple, elegant and undefeated when it comes to writing something that needs to execute fast.
           </div>
           <div className="my-2 px-6">
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         </div>
       </ParagraphCard>
-      
+
     </>
   );
 }
