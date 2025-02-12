@@ -28,7 +28,7 @@ const FlippingCard = () => {
     ];
 
   return (
-    <div className="flex-col justify-center my-6">
+    <div className="flex-col justify-center mt-6">
         <div className='flippingCardContainer'>
             <div className={`flippingCard ${isFlipped ? 'cardFlipped' : ''}`}>
                 <div className='front'>
@@ -49,7 +49,7 @@ const FlippingCard = () => {
                     </ul>
                 </div>
             </div>
-            <div className="relative w-[50%] h-60">
+            <div className="logosGridContainer">
                 <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 top-0 left-0">
                     {frontLogos.map((src, index) => (
                         <div key={index} className={`flex items-center justify-center h-[100%] relative transition-opacity duration-1000 px-2 py-2 bg-gray-500 ${isFlipped ? 'opacity-0' : 'opacity-100'}`}>
@@ -64,7 +64,7 @@ const FlippingCard = () => {
                     ))}
 
                 </div>
-                <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 top-0 left-0">
+                <div className="logosGrid">
                 {backLogos.map((src, index) => (
                         <div key={index} className={`flex items-center justify-center h-[100%] relative transition-opacity duration-1000 px-2 py-2 bg-gray-800 ${isFlipped ? 'opacity-100' : 'opacity-0'}`}>
                         <Image

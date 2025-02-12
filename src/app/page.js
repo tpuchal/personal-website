@@ -4,14 +4,13 @@ import ParagraphCard from "@/components/ParagraphCard";
 
 export default function Home() {
   return (
-    <div>
-      <HeaderCard className={'my-20'} id={'home'}>
-        <span className="text-fontcolor text-6xl transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> Hi! --welcome
+    <>
+      <HeaderCard className={'lg:my-20 my-5 w-full p-1'} id={'home'}>
+        <span className="text-fontcolor lg:text-6xl md:text-4xl text-lg transition-all duration-150 opacity-10 animate-pulse">tpuchal@root:~$</span> <span className="lg:text-6xl md:text-4xl text-lg">Hi! --welcome</span>
       </HeaderCard>
       <ParagraphCard>
-        <div className="my-2 px-6 font-bold">Welcome to my personal website!</div>
+        <div className="my-2 px-6 font-bold text-base">Welcome to my personal website!</div>
         <div className="my-2 px-6">Hope you will have a good time here and will know me better after this short journey!</div>
-        <div className="my-2 px-6 font-bold">Important note!!!! <br></br> This website currently is not optimized for mobile devices. Please check it out on PC</div>
         
         <div id="about-me" className="my-12">
           <HeaderCard>Who am i?</HeaderCard>
@@ -31,7 +30,7 @@ export default function Home() {
             I always liked to figure out how things work. From disassembling old phones, reading about every topic (social or technical), to looking in all the places I should not have, my curiosity has driven me forward.
           </div>
           <div className="my-2 px-6">
-            I have started programming in high school. I've been loving it ever since. Since my first "Hello world", I've felt great after making the computer bend to my will. It felt like magic and has given me the realization that, with proper training, I can do all sorts of cool stuff and play around with computers. There were also some drawbacks, like always being called when someone from my family needed help with computer.
+            I have started programming in high school. I&#39;ve been loving it ever since. Since my first &#34;Hello world&#34;, I&#39;ve felt great after making the computer bend to my will. It felt like magic and has given me the realization that, with proper training, I can do all sorts of cool stuff and play around with computers. There were also some drawbacks, like always being called when someone from my family needed help with computer.
           </div>
           <div className="my-2 px-6">
             Then I went to study Computer Science. I starded the studies out with scholarship for best students. After short time I landed my first job. It has helped me a lot in a way that I have learned what professional software development is.
@@ -46,7 +45,7 @@ export default function Home() {
             If you are looking for a proactive, creative and engaged developer who creates, clean, efficient and safe solutions then you are in the right place!. Give me a call and I can tell you more about myself.
           </div>
         </div>
-        <div id="my-experience" className="my-12">
+        <div id="my-experience" className="mt-12">
           <HeaderCard>What can I do?</HeaderCard>
           <FlippingCard/>
           <div className="my-2 px-6">
@@ -61,6 +60,6 @@ export default function Home() {
         </div>
       </ParagraphCard>
       
-    </div>
+    </>
   );
 }
